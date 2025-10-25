@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Modern responsive landing page with dark mode." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/styles.css" as="style" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Acme — Modern Web</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#"><img src="/assets/logo.svg" alt="Acme logo" width="28" height="28" /> <span>Acme</span></a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.64 13A9 9 0 1 1 11 2.36 7 7 0 0 0 21.64 13z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h1>Build a beautiful website fast</h1>
+        <p class="lede">A lightweight starter with great UX defaults, responsive layout, and dark mode.</p>
+        <div class="actions">
+          <a class="btn primary" href="#pricing">Get Started</a>
+          <a class="btn" href="#features">See Features</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"></div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <ul class="grid features">
+          <li>
+            <div class="feature">
+              <div class="feature-icon">💡</div>
+              <h3>Accessible</h3>
+              <p>Semantic HTML, proper contrast, keyboard-friendly interactions, and skip links.</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast</h3>
+              <p>No frameworks required; minimal JS and modern CSS deliver great performance.</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature">
+              <div class="feature-icon">🎨</div>
+              <h3>Customizable</h3>
+              <p>CSS variables let you theme and brand quickly without refactoring.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="grid pricing">
+          <article class="card">
+            <h3>Starter</h3>
+            <p class="price"><span>$</span>0</p>
+            <ul>
+              <li>Basic components</li>
+              <li>Community support</li>
+            </ul>
+            <button class="btn primary" aria-label="Choose Starter plan">Choose</button>
+          </article>
+          <article class="card highlight" aria-label="Most popular plan">
+            <div class="badge">Popular</div>
+            <h3>Pro</h3>
+            <p class="price"><span>$</span>29</p>
+            <ul>
+              <li>Advanced components</li>
+              <li>Email support</li>
+            </ul>
+            <button class="btn primary" aria-label="Choose Pro plan">Choose</button>
+          </article>
+          <article class="card">
+            <h3>Business</h3>
+            <p class="price"><span>$</span>99</p>
+            <ul>
+              <li>All components</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="btn primary" aria-label="Choose Business plan">Choose</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="grid testimonials">
+          <blockquote>
+            <p>“Setup took minutes, not days.”</p>
+            <cite>— Jamie, Indie Dev</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Clean, accessible, and fast. Love it.”</p>
+            <cite>— Priya, Designer</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Best starter I’ve used in months.”</p>
+            <cite>— Lee, Founder</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <span class="error" id="nameError" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <span class="error" id="emailError" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error" id="messageError" role="alert"></span>
+          </div>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Acme. All rights reserved.</p>
+      <a href="#top" class="icon-btn" aria-label="Back to top" title="Back to top">⬆️</a>
+    </div>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

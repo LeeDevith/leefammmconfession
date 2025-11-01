@@ -1,0 +1,152 @@
+{
+  "template": {
+    "password": "PasswordPin",
+    "selecter": "Block",
+    "moments": "Card",
+    "calendar": "Calendar",
+    "rewards": "Game",
+    "massage": " "
+  },
+
+  "home": {
+    "header": "Happy Anniversary 1 Year",
+    "subheader": "Special gift for you",
+    "background": "/images/components/heart_4.png",
+    "music": "PROUD"
+  },
+
+  "password": {
+    "topic": "My Lock",
+    "image": "/images/customer/nance/password/password.png",
+
+    "correctPin": ["0","6","0","4"],
+    "question": "วันครบรอบของเราาา?",
+    "error_message": "นึกดีๆ อีกครั้งนะ!!",
+    "btn_text": "Unlock My Heart"
+  },
+
+  "moment": {
+    "name": "Patipat",
+    "avatar": "/images/customer/nance/calendar/calendar_header.png",
+
+    "story_img_1": "/images/customer/nance/Video/VDO.mp4",
+    "story_img_2": "/images/customer/nance/calendar/calendar_2.png",
+    "story_img_3": "/images/customer/nance/calendar/calendar_3.png",
+    "story_img_4": "/images/customer/nance/Video/VDO1.mp4",
+    "story_img_5": "/images/customer/nance/Video/VDO2.mp4",
+    "desc_img_1": "ช่วงเวลาแรกที่เราได้เจอกัน",
+    "desc_img_2": "test",
+    "desc_img_3": "test2",
+    "desc_img_4": "test3",
+    "desc_img_5": "test4",
+
+    "card": {
+      "images": [
+        "/images/customer/nance/calendar/calendar_1.png",
+        "/images/customer/nance/calendar/calendar_2.png",
+        "/images/customer/nance/calendar/calendar_3.png",
+        "/images/customer/nance/calendar/calendar_4.png",
+        "/images/customer/nance/calendar/calendar_5.png"
+      ],
+      "descriptions": [
+        "วันเกิดของเธอออ 💝",
+        "ภาพแรกที่ถ่ายในลิฟท์ 💕",
+        "สวยสุดๆ 💖",
+        "วันนั้นไปถ่ายงานกับเธอในมอ ❤️",
+        "ภาพนี้เปาชอบที่สุด 💗"
+      ]
+    },
+
+    "video": "/images/customer/nance/Video/VDO2.mp4",
+    "text_under": "You will always be my favourite person 🤍",
+    "mute": true,
+
+    "image_1": "/images/customer/nance/calendar/calendar_1.png",
+    "day_1": "test",
+    "detail_1": "04 November 2019",
+
+    "image_2": "/images/customer/nance/calendar/calendar_2.png",
+    "day_2": "test",
+    "detail_2": "14 February 2019",
+
+    "image_3": "/images/customer/nance/calendar/calendar_3.png",
+    "day_3": "test",
+    "detail_3": "12 November 2019",
+
+    "image_4": "/images/customer/nance/calendar/calendar_4.png",
+    "day_4": "test",
+    "detail_4": "21 December 2020",
+
+    "image_5": "/images/customer/nance/calendar/calendar_5.png",
+    "day_5": "test",
+    "detail_5": "10 February 2020"
+  },
+
+  "calendar": {
+    "header": "Our Love Journey",
+    "subheader": "เราคบกันมานานแค่ไหนแล้วน้าาาา ?",
+    "startDate": "2024-04-06T00:00:00",
+    "imageHeader": "/images/customer/nance/calendar/calendar_header.png",
+    "image_1": "/images/customer/nance/calendar/calendar_1.png",
+    "image_2": "/images/customer/nance/calendar/calendar_2.png",
+    "image_3": "/images/customer/nance/calendar/calendar_3.png",
+    "image_4": "/images/customer/nance/calendar/calendar_4.png",
+    "image_5": "/images/customer/nance/calendar/calendar_5.png",
+    "image_6": "/images/customer/nance/calendar/calendar_6.png",
+    "image_7": "/images/customer/nance/calendar/calendar_7.png",
+    "image_8": "/images/customer/nance/calendar/calendar_8.png",
+    "image_9": "/images/customer/nance/calendar/calendar_9.png",
+    "image_10": "/images/customer/nance/calendar/calendar_10.png",
+    "image_11": "/images/customer/nance/calendar/calendar_11.png",
+    "image_12": "/images/customer/nance/calendar/calendar_12.png"
+  },
+  "jigsaw": {
+    "title": "เธอเก่งที่สุดดด",
+    "subtitle": "รางวัลคือให้จุ๊บ 10 ที ><",
+    "images": "/images/customer/nance/jigsaw/jigsaw.png"
+  },
+  "minigame": {
+    "title": "เธอเก่งที่สุดดด",
+    "subtitle": "รางวัลคือให้จุ๊บ 10 ที ><",
+    "img_1": "/images/customer/nance/calendar/calendar_1.png",
+    "img_2": "/images/customer/nance/calendar/calendar_2.png",
+    "img_3": "/images/customer/nance/calendar/calendar_3.png",
+    "img_4": "/images/customer/nance/calendar/calendar_4.png",
+    "img_5": "/images/customer/nance/calendar/calendar_5.png",
+    "img_6": "/images/customer/nance/calendar/calendar_6.png"
+  },
+  "massage": {
+    "massage_dear": "Dear Nance",
+    "massage_content": "ขอบคุณที่อยู่เคียงข้างกันมาตลอด 1 ปี ถึงจะมีทะเลาะกันบ้าง แต่ก็ยังผ่านมาได้จนถึงตอนนี้ ขอบคุณนะที่เข้าใจกัน ดูแลกัน และรักในสิ่งที่เค้าเป็น อยากบอกว่ารักเธอมากๆนะ ขอให้เรารักกันแบบนี้ไปนานๆนะ รักเธอนะ",
+    
+    "header": "ข้อความจากหมาแก่ถึงหมาเด็ก",
+    "image": "/images/components/bg-massage.png",
+    "end": "You’re my cutie pie",
+    "conversation": [
+      {
+        "id": 1,
+        "sender": "girl",
+        "text": "ถึงแนนซ์",
+        "time": "10:30"
+      },
+      {
+        "id": 2,
+        "sender": "girl",
+        "text": "ขอให้เธอมีความสุขมากๆ",
+        "time": "10:31"
+      },
+      {
+        "id": 3,
+        "sender": "girl",
+        "text": "ในวันพิเศษนี้นะคะ",
+        "time": "10:31"
+      },
+      {
+        "id": 4,
+        "sender": "girl",
+        "text": "รักเธอมากๆ นะคะ",
+        "time": "10:32"
+      }
+    ]
+  }
+}

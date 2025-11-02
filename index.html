@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Modern Site</title>
+  <meta name="description" content="A modern, responsive website." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Homepage">
+        <img src="/favicon.svg" alt="Logo" width="28" height="28" />
+        <span>Brand</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Build your next idea faster</h1>
+        <p class="subtitle">A clean, accessible, and responsive starter you can customize in minutes.</p>
+        <div class="cta-group">
+          <a class="btn primary" href="#contact">Get started</a>
+          <a class="btn secondary" href="#features">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="grid features-grid">
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>Fast</h3>
+            <p>Lightweight and performant out of the box.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🎯</div>
+            <h3>Focused</h3>
+            <p>Clean structure with sensible defaults.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🛡️</div>
+            <h3>Accessible</h3>
+            <p>Built with inclusive, accessible markup and controls.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p>This starter gives you a solid base: semantic HTML, modern CSS, and ergonomic JavaScript. Extend it with your content and brand.</p>
+          <ul class="checklist">
+            <li>Responsive layout</li>
+            <li>Dark mode</li>
+            <li>Mobile navigation</li>
+            <li>Accessible components</li>
+          </ul>
+        </div>
+        <div class="about-media">
+          <img src="https://picsum.photos/640/420" alt="Illustrative mockup" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+              <small class="error"></small>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+              <small class="error"></small>
+            </label>
+          </div>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+            <small class="error"></small>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Brand. All rights reserved.</div>
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="GitHub">💻</a>
+        <a href="#" aria-label="LinkedIn">🔗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js" defer></script>
+</body>
+</html>

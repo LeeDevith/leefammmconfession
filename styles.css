@@ -1,0 +1,62 @@
+/* CSS Reset (modern minimal)
+   Inspired by Andy Bell's reset and CSS Remedy */
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+html:focus-within{scroll-behavior:smooth}
+html,body{height:100%}
+body{line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,picture,video,canvas,svg{display:block;max-width:100%}
+input,button,textarea,select{font:inherit}
+:root{--bg: #0b0d10;--text: #e6e8eb;--muted:#a8b0b9;--surface:#141820;--border:#222838;--primary:#6aa0ff;--primary-600:#4a86ff;--shadow: 0 10px 30px rgba(0,0,0,.35)}
+:root:has(body.light){color-scheme:light;--bg:#ffffff;--text:#0b1220;--muted:#5b6675;--surface:#f5f7fb;--border:#e6e9ef;--primary:#3b6cff;--primary-600:#2e58d6;--shadow: 0 10px 30px rgba(2,8,23,.1)}
+
+body{background:var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
+.container{width:min(1100px, 92%);margin-inline:auto}
+.skip-link{position:absolute;left:-9999px;top:auto}
+.skip-link:focus{left:1rem;top:1rem;background:var(--surface);color:var(--text);padding:.5rem .75rem;border-radius:.5rem;outline:2px solid var(--primary)}
+
+/* Header */
+.site-header{position:sticky;top:0;background:rgba(20,24,32,.6);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;color:var(--text);text-decoration:none;font-weight:700;letter-spacing:.2px}
+.icon-btn{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:.6rem;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;transition:transform .08s ease, background .2s}
+.icon-btn:hover{transform:translateY(-1px)}
+.icon{width:22px;height:22px;fill:currentColor}
+
+/* Hero */
+.hero{position:relative;isolation:isolate;padding:clamp(3rem, 6vw, 6rem) 0}
+.hero .lede{color:var(--muted);max-width:60ch;margin-top:.75rem}
+.actions{display:flex;gap:.8rem;margin-top:1.25rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.7rem 1rem;border-radius:.7rem;border:1px solid var(--border);background:var(--surface);color:var(--text);text-decoration:none;cursor:pointer}
+.btn.primary{background:linear-gradient(180deg, var(--primary), var(--primary-600));color:white;border-color:transparent;box-shadow:var(--shadow)}
+.hero-art{position:absolute;inset:auto -10% -25% -10%;height:55%;background:radial-gradient(1200px 450px at 50% 0%, color-mix(in hsl, var(--primary) 25%, transparent), transparent 70%), linear-gradient(180deg, transparent, rgba(0,0,0,.1));z-index:-1;pointer-events:none}
+
+/* Sections */
+.section{padding:clamp(2.5rem, 5vw, 4rem) 0}
+.section.alt{background:var(--surface)}
+.grid{display:grid;gap:1.2rem}
+.features{grid-template-columns:repeat(auto-fit, minmax(220px, 1fr))}
+.pricing{grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));align-items:stretch}
+.testimonials{grid-template-columns:repeat(auto-fit, minmax(260px, 1fr))}
+.feature{padding:1rem;border:1px solid var(--border);border-radius:1rem;background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
+.feature-icon{font-size:1.5rem}
+.card{position:relative;padding:1.2rem;border:1px solid var(--border);border-radius:1rem;background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
+.card.highlight{outline:2px solid var(--primary)}
+.badge{position:absolute;top:12px;right:12px;background:var(--primary);color:white;padding:.2rem .5rem;border-radius:.5rem;font-size:.75rem}
+.price{font-size:2.2rem;font-weight:800;margin:.4rem 0}
+
+/* Form */
+.field{display:grid;gap:.35rem;margin-bottom:.9rem}
+input,textarea{padding:.7rem .8rem;border-radius:.6rem;border:1px solid var(--border);background:var(--bg);color:var(--text)}
+.error{color:#ff5757;min-height:1.1rem;font-size:.9rem}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--border);padding:1.5rem 0;color:var(--muted)}
+.site-footer .container{display:flex;align-items:center;justify-content:space-between}
+
+/* Toast */
+.toast{position:fixed;inset:auto 1rem 1rem auto;background:var(--surface);border:1px solid var(--border);padding:.8rem 1rem;border-radius:.6rem;box-shadow:var(--shadow)}
+
+@media (min-width:960px){
+  h1{font-size:clamp(2rem, 4vw, 3rem)}
+}
